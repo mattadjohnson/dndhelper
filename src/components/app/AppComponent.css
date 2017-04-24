@@ -1,0 +1,20 @@
+.app-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 64px;
+  background-color: #222;
+  color: white;
+}
+
+.app-title {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.app-body {
+  display: flex;
+  margin: 40px 0;
+  align-items: center;
+  flex-direction: column;
+}
