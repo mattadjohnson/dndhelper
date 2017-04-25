@@ -15,6 +15,7 @@
 .app-body {
   display: flex;
   margin: 40px 0;
+  padding: 0 15px;
   align-items: center;
   flex-direction: column;
 }

@@ -2,6 +2,7 @@
   "name": "dndhelper",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://matthewjohnson3154.github.io/dndhelper",
   "dependencies": {
     "material-ui": "^0.17.4",
     "react": "^15.5.4",
@@ -9,12 +10,15 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   }
 }

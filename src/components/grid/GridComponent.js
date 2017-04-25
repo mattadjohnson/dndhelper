@@ -4,9 +4,6 @@ import Subheader from 'material-ui/Subheader'
 import './GridComponent.css'
 
 const styles = {
-  grid: {
-    width: '75%'
-  },
   tile: {
     display: 'flex',
     justifyContent: 'center',
@@ -24,7 +21,7 @@ const calcRoll = (dice) => addRolls(dropLow(rollDice(dice)))
 
 const GridComponent = () => (
   <div className='grid'>
-    <GridList className='grid-list' cellHeight={100} cols={6} padding={1} style={styles.grid}>
+    <GridList className='grid-list' cellHeight={80} cols={6} padding={1}>
       <Subheader>Character Stat Rolls</Subheader>
       {tilesData.map((_, i) => (
         <GridTile className='grid-tile' key={i} style={styles.tile}>{calcRoll([...Array(4)])}</GridTile>
